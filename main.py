@@ -34,14 +34,14 @@ class Auto:
 
     cantidadCreados = 0
 
-    def __init__(self, modelo, precio, asientos, registro, marca, motor):
+    def __init__(self, modelo, precio, asientos, marca, motor, registro):
 
         self.modelo = modelo
         self.precio = precio
         self.asientos = asientos
         self.registro = registro
         self.marca = marca
-        self.Motor = motor
+        self.motor = motor
 
     def cantidadAsientos(self):
 
@@ -56,7 +56,7 @@ class Auto:
     
     def verificarIntegridad(self):
 
-        if self.registro == self.Motor.registro:
+        if self.registro == self.motor.registro:
 
             for i in self.asientos:
 
